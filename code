@@ -1,0 +1,291 @@
+const int piezo = 5;
+const int LED1 =  8;  //green
+const int LED2 =  7;   //green
+const int LED3 =  6;  //blue
+const int LED4 = 4; //blue
+const int LED5 =  3; //red
+const int LED6 =  2;  //red
+const int buttonPin1 = 11;
+int buttonState = 0;
+int pitch;
+void setup() {
+  // put your setup code here, to run once:
+Serial.begin(9600);
+pinMode(LED1, OUTPUT);
+pinMode(LED2, OUTPUT);
+pinMode(LED3, OUTPUT);
+pinMode(LED4, OUTPUT);
+pinMode(LED5, OUTPUT);
+pinMode(LED6, OUTPUT);
+pinMode(buttonPin1, INPUT);
+
+
+}
+void loop() {
+buttonState = digitalRead(buttonPin1);
+delay (100);
+if (buttonState == HIGH) {
+  digitalWrite(LED1, HIGH);
+  delay(500);
+  digitalWrite(LED1, LOW);
+  delay(500);
+  digitalWrite(LED2, HIGH);
+  delay(500);
+  digitalWrite(LED2, LOW);
+  delay(500);
+  digitalWrite(LED3, HIGH);
+  delay(500);
+  digitalWrite(LED3, LOW);
+  delay(500);
+  digitalWrite(LED4, HIGH);
+  delay(500);
+  digitalWrite(LED4, LOW);
+  delay(500);
+  digitalWrite(LED5, HIGH);
+  delay(100);
+  digitalWrite(LED6, HIGH);
+  delay(500);
+  digitalWrite(LED6, LOW);
+  delay(500);
+  digitalWrite(LED1, HIGH);
+  delay(100);
+  digitalWrite(LED1, LOW);
+  delay(100);
+  digitalWrite(LED2, HIGH);
+  delay(100);
+  digitalWrite(LED2, LOW);
+  delay(100);
+  digitalWrite(LED3, HIGH);
+  delay(100);
+  digitalWrite(LED3, LOW);
+  delay(100);
+  digitalWrite(LED4, HIGH);
+  delay(100);
+  digitalWrite(LED4, LOW);
+  delay(100);
+  digitalWrite(LED5, HIGH);
+  delay(100);
+  digitalWrite(LED5, LOW);
+  delay(100);
+  digitalWrite(LED6, HIGH);
+  delay(100);
+  digitalWrite(LED6, LOW);
+  delay(10);
+  digitalWrite(LED1, HIGH);
+  delay(100);
+  digitalWrite(LED1, LOW);
+  delay(100);
+  digitalWrite(LED2, HIGH);
+  delay(100);
+  digitalWrite(LED2, LOW);
+  delay(100);
+  digitalWrite(LED3, HIGH);
+  delay(100);
+  digitalWrite(LED3, LOW);
+  delay(100);
+  digitalWrite(LED4, HIGH);
+  delay(100);
+  digitalWrite(LED4, LOW);
+  delay(100);
+  digitalWrite(LED5, HIGH);
+  delay(100);
+  digitalWrite(LED5, LOW);
+  delay(100);
+  digitalWrite(LED6, HIGH);
+  delay(100);
+  digitalWrite(LED6, LOW);
+  delay(100);
+  digitalWrite(LED1, HIGH);
+  delay(100);
+  digitalWrite(LED1, LOW);
+  delay(100);
+  digitalWrite(LED2, HIGH);
+  delay(100);
+  digitalWrite(LED2, LOW);
+  delay(100);
+  digitalWrite(LED3, HIGH);
+  delay(100);
+  digitalWrite(LED3, LOW);
+  delay(100);
+  digitalWrite(LED4, HIGH);
+  delay(100);
+  digitalWrite(LED4, LOW);
+  delay(100);
+  digitalWrite(LED5, HIGH);
+  delay(100);
+  digitalWrite(LED5, LOW);
+  delay(100);
+  digitalWrite(LED6, HIGH);
+  delay(100);
+  digitalWrite(LED6, LOW);
+  delay(100);
+  digitalWrite(LED1, HIGH);
+  delay(100);
+  digitalWrite(LED1, LOW);
+  delay(100);
+  digitalWrite(LED2, HIGH);
+  delay(100);
+  digitalWrite(LED2, LOW);
+  delay(100);
+  digitalWrite(LED3, HIGH);
+  delay(100);
+  digitalWrite(LED3, LOW);
+  delay(100);
+  digitalWrite(LED4, HIGH);
+  delay(100);
+  digitalWrite(LED4, LOW);
+  delay(100);
+  digitalWrite(LED5, HIGH);
+  delay(100);
+  digitalWrite(LED5, LOW);
+  delay(100);
+  digitalWrite(LED6, HIGH);
+  delay(100);
+  digitalWrite(LED6, LOW);
+  delay(100);;
+  digitalWrite(LED1, HIGH);
+  delay(100);
+  digitalWrite(LED1, LOW);
+  delay(100);
+  digitalWrite(LED2, HIGH);
+  delay(100);
+  digitalWrite(LED2, LOW);
+  delay(100);
+  digitalWrite(LED3, HIGH);
+  delay(100);
+  digitalWrite(LED3, LOW);
+  delay(100);
+  digitalWrite(LED4, HIGH);
+  delay(100);
+  digitalWrite(LED4, LOW);
+  delay(100);
+  digitalWrite(LED5, HIGH);
+  delay(100);
+  digitalWrite(LED5, LOW);
+  delay(100);
+  digitalWrite(LED6, HIGH);
+  delay(100);
+  digitalWrite(LED6, LOW);
+  delay(100);
+  digitalWrite(LED1, HIGH);
+  delay(100);
+  digitalWrite(LED1, LOW);
+  delay(100);
+  digitalWrite(LED2, HIGH);
+  delay(100);
+  digitalWrite(LED2, LOW);
+  delay(100);
+  digitalWrite(LED3, HIGH);
+  delay(100);
+  digitalWrite(LED3, LOW);
+  delay(100);
+  digitalWrite(LED4, HIGH);
+  delay(100);
+  digitalWrite(LED4, LOW);
+  delay(100);
+  digitalWrite(LED5, HIGH);
+  delay(100);
+  digitalWrite(LED5, LOW);
+  delay(100);
+  digitalWrite(LED6, HIGH);
+  delay(100);
+  digitalWrite(LED6, LOW);
+  delay(100);
+   tone(piezo, 523, 1200); // G3
+  delay(500);
+  tone(piezo, 698, 500); // A3
+  delay(500);
+  tone(piezo, 698, 1200); // A3
+  delay(500);
+  tone(piezo, 784, 500); // B3
+  delay(500);
+  tone(piezo, 698, 1200); // C4
+  delay(500);
+  tone(piezo, 659, 500); // C4
+  delay(500);
+  tone(piezo, 587, 1200); // D4
+  delay(500);
+  tone(piezo, 587, 500); //D4
+  delay(500);
+  tone(piezo, 587, 1200); // E4
+  delay(500);
+  tone(piezo, 784, 500); // F4
+  delay(500);
+  tone(piezo, 784, 1200); // F4
+  delay(500);
+  tone(piezo, 880, 500); // G4
+  delay(500);
+  tone(piezo, 784, 1200); // G4
+  delay(500);
+  tone(piezo, 698, 500); // A4
+  delay(500);
+  tone(piezo, 659, 1200); // A4
+  delay(500);
+  tone(piezo, 523, 500); // B4
+  delay(500);
+  tone(piezo, 523, 1200); // C5
+  delay(500);
+   tone(piezo, 880, 1200); // D4
+  delay(500);
+  tone(piezo, 880, 500); //D4
+  delay(500);
+  tone(piezo, 932, 1200); // E4
+  delay(500);
+  tone(piezo, 880, 500); // F4
+  delay(500);
+  tone(piezo, 784, 1200); // F4
+  delay(500);
+  tone(piezo, 698, 500); // G4
+  delay(500);
+  tone(piezo, 587, 1200); // G4
+  delay(500);
+  tone(piezo, 523, 500); // A4
+  delay(500);
+  tone(piezo, 523, 1200); // A4
+  delay(500);
+  tone(piezo, 587, 500); // B4
+  delay(500);
+  tone(piezo, 784, 1200); // C5
+  delay(500);
+  tone(piezo, 659, 1200); // E4
+  delay(500);
+  tone(piezo, 698, 500); // F4
+  delay(500);
+  tone(piezo, 523, 1200); // F4
+  delay(500);
+  tone(piezo, 880, 500); // G4
+  delay(500);
+  tone(piezo, 698, 500); // A3
+  delay(500);
+  tone(piezo, 698, 1200); // A3
+  delay(500);
+  tone(piezo, 784, 500); // B3
+  delay(500);
+  tone(piezo, 698, 1200); // C4
+  delay(500);
+  tone(piezo, 659, 500); // C4
+  delay(500);
+  tone(piezo, 587, 1200); // D4
+  delay(500);
+  tone(piezo, 587, 500); //D4
+  delay(500);
+  tone(piezo, 587, 1200); // E4
+  delay(500);
+  tone(piezo, 784, 500); // F4
+  delay(500);
+  tone(piezo, 784, 1200); // F4
+  delay(500);
+  tone(piezo, 880, 500); // G4
+  delay(500);
+  tone(piezo, 784, 1200); // G4
+  delay(500);
+  tone(piezo, 698, 500); // A4
+  delay(500);
+  tone(piezo, 659, 1200); // A4
+  delay(500);
+  tone(piezo, 523, 500); // B4
+  delay(500);
+  tone(piezo, 523, 1200); // C5
+  delay(500);
+}
+}
